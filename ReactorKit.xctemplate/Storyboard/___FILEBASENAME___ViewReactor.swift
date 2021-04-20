@@ -4,7 +4,7 @@ import ReactorKit
 import RxCocoa
 import RxSwift
 
-class ___FILEBASENAME___: Reactor {
+final class ___FILEBASENAME___: Reactor {
     
     enum Action {
         
