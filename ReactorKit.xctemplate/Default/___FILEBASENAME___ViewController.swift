@@ -8,17 +8,31 @@ import RxCocoa
 
 final class ___FILEBASENAME___: UIViewController, View {
     
-    typealias Reactor = ___VARIABLE_productName___ViewReactor
+    // MARK: - Properties
     
-    var disposeBag: DisposeBag = DisposeBag()
+    // MARK: - UI
     
+    
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
-    func bind(reactor: Reactor) {
+    
+    // MARK: - Initializing
+    init(
+        reactor: Reactor
+    ) {
+        defer { self.reactor = reactor }
         
     }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    // MARK: - Configuring
+    func bind(reactor: Reactor) {
+        
+    }
 }
